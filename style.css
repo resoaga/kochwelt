@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Source - https://stackoverflow.com/q
 Posted by Timothy, modified by community. See post 'Timeline' for change history
@@ -7,3 +8,10 @@ Retrieved 2025-11-12, License - CC BY-SA 4.0
 .body {
   background-color: red;
 }
+=======
+body{ 
+    margin: 0px;
+    font-family:"Raleway, serif";
+    
+}
+>>>>>>> f8edd5d2bf3e8f7b41ae1a2626ba610e54f01b44
