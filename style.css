@@ -1,5 +1,9 @@
-body{ 
-    margin: 0px;
-    font-family:"Raleway-Black";
-    font-size: 100px;
+/*
+Source - https://stackoverflow.com/q
+Posted by Timothy, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-12, License - CC BY-SA 4.0
+*/
+
+.body {
+  background-color: red;
 }
