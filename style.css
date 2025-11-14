@@ -1,17 +1,53 @@
-<<<<<<< HEAD
-/*
-Source - https://stackoverflow.com/q
-Posted by Timothy, modified by community. See post 'Timeline' for change history
-Retrieved 2025-11-12, License - CC BY-SA 4.0
-*/
-
-.body {
-  background-color: red;
-}
-=======
 body{ 
     margin: 0px;
-    font-family:"Raleway, serif";
+    font-family: "Raleway", sans-serif;
     
 }
->>>>>>> f8edd5d2bf3e8f7b41ae1a2626ba610e54f01b44
+header {
+    
+    width: 100%;
+    box-shadow: rgb(230, 230, 230) 0 2px 10px
+}
+
+
+    .headerdisplay {
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+
+    }
+    header img {
+        display: flex;
+        width: 250;
+    }
+
+    nav {
+        top: 15px;
+        position: relative;
+        display: flex;
+    }
+
+    nav h2 {
+        font-size: 23px;
+        margin-left:25px;
+        font-weight: lighter;
+
+    }
+
+    
+    .navlink {
+        text-decoration: none;
+        color: black;
+        
+    }
+    .navlink:hover{
+        color: rgb(0, 128, 0);
+        text-shadow: rgb(19, 163, 0) 0 1px 1px;
+        box-shadow: green 0 3px 0px
+    }
+
+
+    
+
+    
