@@ -45,6 +45,8 @@ nav h2 {
 }
 main {
   width: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 main img {
   border-radius: 15px;
@@ -75,13 +77,52 @@ main img {
 }
 
 .button {
-  background-color: #04aa6d;
-  border: #b9c2bf;
+  background-color: #047e18;
+  border-radius: 2px;
+  border: solid 1px rgb(0, 0, 0);
   color: white;
-  padding: 15px 32px;
+  padding: 10px 70px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ee7272;
+}
+
+.cta {
+  width: 100vw;
+  background-color: blanchedalmond;
+  padding: 20px;
+  position: relative;
+}
+
+.titel {
+  font-size: 20px;
+  margin: 30px 0px 30px 0px;
+  justify-items: center;
+}
+.rezeptwahl {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+.rezept {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.rezept img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.rezept h2 {
+  font-size: 14px;
 }
