@@ -126,3 +126,38 @@ main img {
 .rezept h2 {
   font-size: 14px;
 }
+
+footer {
+  background-color: #403B3B;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-logo {
+  height: 90px;
+}
+
+.icons {
+  height: 60px;
+  padding-right: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.link-text {
+  font-size: 24px;
+}
+
+.footer-link:hover {
+  color: rgb(0, 128, 0);
+  text-shadow: rgb(19, 163, 0) 0 1px 1px;
+  box-shadow: green 0 3px 0px;
+}
