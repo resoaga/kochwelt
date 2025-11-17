@@ -79,7 +79,7 @@ main img {
   object-fit: cover;
   margin-right: 30px;
 }
-.recipeoftheday {
+.recipe-of-the-day {
   display: flex;
   flex-direction: column;
   
@@ -156,7 +156,7 @@ main img {
   font-size: 14px;
 }
 
-.vergleichsbereich {
+.comparison-area {
   display: flex;
   align-items: center;
   margin-top: 40px;
@@ -164,18 +164,18 @@ main img {
   padding-left: 120px;
   gap: 50px;
 }
-.vergleich {
+.comparison {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.vergleich-text {
+.comparison-text {
   display: flex;
   flex-direction: row;
 }
 
-.vergleichsbereich img {
+.comparison-area img {
   width: 200px;
   height: 200px;
   object-fit: cover;
