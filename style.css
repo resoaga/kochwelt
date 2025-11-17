@@ -159,10 +159,8 @@ main img {
 .comparison-area {
   display: flex;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
-  padding-left: 120px;
-  gap: 50px;
+  padding: 70px 200px;
+  
 }
 .comparison {
   display: flex;
@@ -173,6 +171,7 @@ main img {
 .comparison-text {
   display: flex;
   flex-direction: row;
+  gap: 50px;
 }
 
 .comparison-area img {
