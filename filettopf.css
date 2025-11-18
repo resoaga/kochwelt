@@ -1,13 +1,50 @@
+
+
+section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section h1 {
 
-
+    padding-right: 103px;
     font-size: 55px;
+}
+section img{
+
+    width: 60%;
+    height: 30%;
+    
+
 }
 .time{
 
-    font-size: 20px; ;
+    font-size: 23px; ;
 }
 .timeimg{
-
+    border: none;
     width: 20px;
+}  
+
+.work {
+
+    background-color: #ebeceb;
+    display: flex;
+    border: black 2px;
+    padding: 2px;
+
+}
+
+.work p {
+    
+    font-size: 13px;
+}
+
+.worktime {
+    display: flex;
+    padding-left: 262px;
+    gap: 45px;
+    
 }
