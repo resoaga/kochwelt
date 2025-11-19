@@ -1,0 +1,28 @@
+.impressum {
+  text-align: center;
+  padding: 40px 20px 80px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  background-color: #ebe9e9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.impressum h1 {
+  text-align: center;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+.impressum h2 {
+  margin-top: 40px;
+  color: #047e18;
+  font-size: 20px;
+  padding-top: 70px;
+}
+
+.impressum p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555;
+}

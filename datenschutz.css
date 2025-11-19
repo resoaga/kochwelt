@@ -1,0 +1,35 @@
+.datenschutz {
+  text-align: start;
+  padding: 40px 20px 80px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  background-color: #ebe9e9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.datenschutz h1 {
+  text-align: center;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+.datenschutz h2 {
+  margin-top: 40px;
+  color: #2c2b2b;
+  font-size: 30px;
+  padding-top: 70px;
+}
+
+.datenschutz h3 {
+  margin-top: 20px;
+  color: #1b1b1b;
+  font-size: 25px;
+  padding-top: 70px;
+}
+
+.impressum p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555;
+}
