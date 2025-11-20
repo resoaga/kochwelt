@@ -1,0 +1,62 @@
+main {
+  padding: 0 297px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h1 {
+  padding-right: 103px;
+  font-size: 55px;
+}
+section img {
+  width: 1250px;
+  height: 500px;
+  margin: 0 100px;
+  border-radius: 10px;
+}
+.time {
+  font-size: 23px;
+}
+.timeimg {
+  border: none;
+  width: 20px;
+}
+
+.work {
+  border-radius: 10px;
+  background-color: #ebeceb;
+  display: flex;
+  border: black 2px;
+  padding: 2px;
+}
+
+.work p {
+  font-size: 13px;
+}
+
+.worktime {
+  display: flex;
+  gap: 30px;
+  padding: 25px 0;
+}
+
+.ingredients {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  width: 100cap;
+}
+.background {
+  background-color: #ebeceb;
+}
+img[src="./img/profile.png"] {
+  height: 80px;
+  width: 80px;
+  border: 2px solid #333;
+}
