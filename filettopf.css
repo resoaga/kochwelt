@@ -1,4 +1,7 @@
+main{
 
+    padding:0 297px;
+}
 
 section{
 
@@ -14,10 +17,10 @@ section h1 {
 }
 section img{
 
-    width: 60%;
-    height: 30%;
-    
-
+    width: 1250px; 
+    height: 500px;
+    margin: 0 100px;
+    border-radius: 10px;
 }
 .time{
 
@@ -29,11 +32,12 @@ section img{
 }  
 
 .work {
-
+    border-radius: 10px;
     background-color: #ebeceb;
     display: flex;
     border: black 2px;
     padding: 2px;
+   
 
 }
 
@@ -44,7 +48,26 @@ section img{
 
 .worktime {
     display: flex;
-    padding-left: 262px;
-    gap: 45px;
-    
+    gap: 30px;
+    padding: 25px 0;
 }
+
+
+
+
+.ingredients {
+display:flex ;
+padding-top: 20px ;
+padding-left: 30px;
+border-radius: 10px;
+padding-bottom: 20px;
+width: 100cap;
+}
+.background {
+
+    background-color: #ebeceb; 
+}
+
+
+
+
