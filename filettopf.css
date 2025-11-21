@@ -96,6 +96,18 @@ img[src="./img/profile.png"] {
     font-weight: bold;
 }
 
+.portions button {
+  background-color: green;
+  border: 0px;
+  color: white;
+  padding: 2px 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 
 
 
