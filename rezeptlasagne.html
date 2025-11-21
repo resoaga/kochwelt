@@ -8,15 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasagne Bolognese Art</title>
 </head>
-<body class="hallo">
+<body>
+    <header>
+        <div class="headerdisplay">
+          <div>
+            <a href="index.html"><img class="Kochweltlogo" src="./img/logo.png" alt="Kochwelt" /></a>
+          </div>
+          <nav>
+            <h2 class="start">
+              <a href="index.html" class="navlink navihide">Start</a>
+            </h2>
+            <h2 class="dayrecipe">
+              <a href="dayreciept.html" class="navlink navhide"
+                >Rezept des Tages</a>
+            </h2>
+            <h2 class="contact">
+              <a href="kontakt.html" class="navlink navihide">Kontakt</a>
+            </h2>
+            <h2 class="imprint">
+              <a href="impressum.html" class="navlink navihide">Impressum</a>
+            </h2>
+          </nav>
+        </div>
+      </header>
+<main>
     <h1>Lasagne Bolognese Art</h1>
-    <div>
-    <img src="./img/food-5987888_1920.jpg">
-    <img src="./img/icons/clock-regular.svg"> 40 Minuten
-    <img src="./img/icons/brain-solid.svg"> simpel
-    <img src="./img/icons/calendar-alt-regular.svg"> 17.11.2025
+    <img class="keyvisual" src="./img/food-5987888_1920.jpg">
+    <div class="">
+        <img class="recipe-icons" src="./img/icons/clock-regular.svg"> 40 Minuten
+    <img class="recipe-icons" src="./img/icons/brain-solid.svg"> simpel
+    <img class="recipe-icons" src="./img/icons/calendar-alt-regular.svg"> 17.11.2025
 </div>
-    Zutaten für <input> <button>Portionen</button>
+    Zutaten für <input type="number" min="1" max="10"> <button>Portionen</button>
     <table>
         <tr>
             <td>8</td>
@@ -65,7 +88,7 @@
     </table>
 
     <h2>Zubereitung</h2>
-    <div><img src="./img/icons/clock-regular.svg"> 40 Minuten</div>
+    <div><img class="recipe-icons"  src="./img/icons/clock-regular.svg"> 40 Minuten</div>
     <div>Zwiebel und Knoblauch putzen und in Würfel schneiden. Das Öl erhitzen, die Gemüsewürfel darin gut anbraten. Nun das Hackfleisch zufügen und 
         krümelig bzw. kross braten. Passierte Tomaten hinzufügen und mit Salz und Pfeffer abschmecken.<br> 
         Für die Béchamel die Butter in einem Topf zerlassen. Das Mehl einrühren und kurz anschwitzen, dann unter Rühren nach und nach die Milch zugießen. Mit Muskat und Salz abschmecken und einmal aufkochen lassen.<br>
@@ -73,7 +96,39 @@
         Im vorgeheizten Backofen bei 180 °C Ober-/Unterhitze ca. 25 Minuten überbacken. Bevor die Lasagne portioniert wird, einige Minuten ruhen lassen.
     </div>
     <p>Rezept erstellt von</p>
-    <img src="./img/profile.png"> Nicole
+    <img class="profile" src="./img/profile.png"> Nicole
+</main>
+<footer>
+    <div><img class="footer-logo" src="./img/logo_white.png" alt="logo">
+      <img class="footer-logo-mobile hide" src="./img/logo_small_white.png" alt="logo"></div>
+    <div>
+      <div class="link-text">
+      <a class="footer-link" href="impressum.html">Impressum</a> |
+      <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+    </div>
+      <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+    </div>
+    <div class="social-media">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/"
+        ><img class="icons" src="./img/facebook.png" alt="facebook"
+      /></a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.instagram.com/"
+        ><img class="icons" src="./img/instagram.png" alt="instagram"
+      /></a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/"
+        ><img class="icons" src="./img/youtube.png" alt="youtube"
+      /></a>
+    </div>
+  </footer>
 
 </body>
 </html>
