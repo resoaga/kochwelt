@@ -1,0 +1,128 @@
+
+
+
+
+
+
+
+main {
+  width: 100%;
+}
+main img {
+  border-radius: 5px;
+  border: solid 1px rgb(138, 136, 136);
+}
+.hero {
+  display: flex;
+  gap: 50px;
+  padding: 100px 220px;
+  justify-content: center;
+}
+.hero img {
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 30px;
+}
+.recipe-of-the-day {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+}
+.hero h1 {
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  max-width: 500px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.button {
+  background-color: green;
+  
+  border: 0px;
+  color: white;
+  padding: 10px 70px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(109, 204, 0);
+  text-shadow: rgb(19, 163, 0) 0 1px 1px;
+  
+}
+
+.cta {
+  background-color: #ebeceb;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.title {
+  font-size: 20px;
+  margin: 30px 0px 30px 0px;
+  justify-items: center;
+}
+.takerecipe {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+.recipe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.recipe img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe h2 {
+  font-size: 14px;
+}
+
+.comparison-area {
+  display: flex;
+  align-items: center;
+  padding: 70px 200px;
+  
+}
+.comparison {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison-text {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.comparison-area img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
