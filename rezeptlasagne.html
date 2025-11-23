@@ -34,12 +34,22 @@
 <main>
     <h1>Lasagne Bolognese Art</h1>
     <img class="keyvisual" src="./img/food-5987888_1920.jpg">
-    <div class="">
-        <img class="recipe-icons" src="./img/icons/clock-regular.svg"> 40 Minuten
+    <div class="informations">
+      <div class="informations-box">
+      <img class="recipe-icons" src="./img/icons/clock-regular.svg"> 40 Minuten
+    </div> 
+  <div class="informations-box">   
     <img class="recipe-icons" src="./img/icons/brain-solid.svg"> simpel
+  </div> 
+<div class="informations-box">   
     <img class="recipe-icons" src="./img/icons/calendar-alt-regular.svg"> 17.11.2025
+  </div>  
 </div>
-    Zutaten für <input type="number" min="1" max="10"> <button>Portionen</button>
+<form>
+    <label for="servings">Zutaten für</label>
+    <input id="servings" type="number" min="1" max="10" value="4"> 
+    <input class="button" type="submit" value="Portionen" onclick="console.log()">
+  </form>
     <table>
         <tr>
             <td>8</td>
@@ -88,7 +98,7 @@
     </table>
 
     <h2>Zubereitung</h2>
-    <div><img class="recipe-icons"  src="./img/icons/clock-regular.svg"> 40 Minuten</div>
+    <div class="informations-box"><img class="recipe-icons"  src="./img/icons/clock-regular.svg"> 40 Minuten</div>
     <div>Zwiebel und Knoblauch putzen und in Würfel schneiden. Das Öl erhitzen, die Gemüsewürfel darin gut anbraten. Nun das Hackfleisch zufügen und 
         krümelig bzw. kross braten. Passierte Tomaten hinzufügen und mit Salz und Pfeffer abschmecken.<br> 
         Für die Béchamel die Butter in einem Topf zerlassen. Das Mehl einrühren und kurz anschwitzen, dann unter Rühren nach und nach die Milch zugießen. Mit Muskat und Salz abschmecken und einmal aufkochen lassen.<br>
@@ -96,7 +106,9 @@
         Im vorgeheizten Backofen bei 180 °C Ober-/Unterhitze ca. 25 Minuten überbacken. Bevor die Lasagne portioniert wird, einige Minuten ruhen lassen.
     </div>
     <p>Rezept erstellt von</p>
+    <div class="informations">
     <img class="profile" src="./img/profile.png"> Nicole
+    </div>
 </main>
 <footer>
     <div><img class="footer-logo" src="./img/logo_white.png" alt="logo">
