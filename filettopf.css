@@ -17,22 +17,19 @@ section{
 
 section h1 {
 
-    display: flex;
-    
-    font-size: 55px;
-    align-items: center;
+    padding-right: 103px;
     font-size: 55px;
 }
 section img{
 
-    width: 1100px; 
+    width: 1250px; 
     height: 500px;
     margin: 0 100px;
     border-radius: 10px;
 }
 .time{
 
-    font-size: 25px; ;
+    font-size: 23px; ;
 }
 .timeimg{
     border: none;
@@ -45,9 +42,6 @@ section img{
     display: flex;
     border: black 2px;
     padding: 2px;
-    width: 150px;
-    justify-content: center;
-    
    
 
 }
@@ -57,13 +51,13 @@ table{
 }
 .work p {
     
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .worktime {
     display: flex;
     gap: 30px;
-    padding: 25px 163px;
+    padding: 25px 0;
 }
 
 .ingredient{
@@ -97,9 +91,7 @@ img[src="./img/profile.png"] {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-bottom: 100px;
-    font-size: 18px;
-    
+    padding-bottom: 100px
 }
 
 .profilename {
@@ -107,7 +99,7 @@ img[src="./img/profile.png"] {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    
+    ;
 }
 .profilename p{
 
@@ -131,14 +123,12 @@ img[src="./img/profile.png"] {
 .portions{
 
     padding-bottom: 20px;
-    font-size: 18px;
 }
 
 .recipe{
 
     font-size: 20px;
 }
-
 
 
 
