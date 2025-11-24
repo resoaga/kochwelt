@@ -61,6 +61,11 @@ table {
 
   }
 
+.amount {
+  width: 10%;
+  text-align: right;
+} 
+
 tr:nth-child(odd) {
     background-color: #ebeceb;
     
