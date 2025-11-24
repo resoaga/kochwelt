@@ -1,7 +1,12 @@
+body{
+     font-family: 'Raleway, sans-serif';
+}
+
 main{
     padding: 50px 200px;
     font-size: 18px;
 }
+
 
 .keyvisual {
     width: 100%;
