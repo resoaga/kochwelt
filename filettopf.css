@@ -1,6 +1,11 @@
-main{
+body{ 
 
-    padding:0 297px;
+    font-family: 'Raleway, sans-serif';
+}
+
+
+main{
+    padding:0 200px;
 }
 
 section{
@@ -40,7 +45,10 @@ section img{
    
 
 }
-
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
 .work p {
     
     font-size: 13px;
@@ -52,7 +60,11 @@ section img{
     padding: 25px 0;
 }
 
+.ingredient{
 
+    width: 245px;
+    
+}
 
 
 .ingredients {
@@ -61,7 +73,8 @@ padding-top: 20px ;
 padding-left: 30px;
 border-radius: 10px;
 padding-bottom: 20px;
-width: 100cap;
+
+font-size: 20px;
 }
 .background {
 
@@ -106,6 +119,15 @@ img[src="./img/profile.png"] {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
+}
+.portions{
+
+    padding-bottom: 20px;
+}
+
+.recipe{
+
+    font-size: 20px;
 }
 
 
