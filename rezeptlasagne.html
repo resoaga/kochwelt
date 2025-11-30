@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     
+     <script src="eingabe.js"></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="lasagne.css"/>
@@ -47,56 +47,53 @@
   </div>  
 </div>
 <form>
-    <label for="servings">Zutaten für</label>
-    <input id="servings" type="number" min="1" max="10" value="4"> 
-    <input class="button" type="submit" value="Portionen" onclick="console.log()">
-  </form>
-    <table>
-        <tr>
-            <td class="amount">8</td>
-            <td>Lasagneplatte(n)</td>
-        </tr>
-        <tr>
-            <td class="amount">500 g</td>
-            <td>gemischtes Hackfleisch</td>
-        </tr>
-        <tr>
-            <td class="amount">3 EL</td>
-            <td>Olivenöl</td>
-        </tr>
-        <tr>
-            <td class="amount">1</td>
-            <td>Zwiebel(n)</td>
-        </tr>
-        <tr>
-            <td class="amount">1</td>
-            <td>Knoblauchzehe(n)</td>
-        </tr>
-        <tr>
-            <td class="amount">500 g</td>
-            <td>passierte Tomaten</td>
-        </tr
-        ><tr>
-            <td class="amount"></td>
-            <td>Salz und Pfeffer</td>
-        </tr>
-        <tr>
-            <td class="amount">40 g</td>
-            <td>Butter</td>
-        </tr>
-        <tr>
-            <td class="amount">40 g</td>
-            <td>Mehl</td>
-        </tr>
-        <tr>
-            <td class="amount">500 ml</td>
-            <td>Milch</td>
-        </tr>
-        <tr>
-            <td class="amount">200 g</td>
-            <td>geriebener Käse</td>
-        </tr>
-    </table>
+            <label for="servings">Zutaten für</label>
+            <input id="servings" type="number" min="1" max="10" value="4">
+            <button type="button" onclick="updateIngredients()">Portionen berechnen</button>
+        </form>
+
+        <table>
+            <tr>
+                <td class="amount" data-ingredient="lasagnaPlates">8 Lasagneplatten</td>
+                <td>Lasagneplatte(n)</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="mincedMeat">500 g</td>
+                <td>gemischtes Hackfleisch</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="oliveOil">3 EL</td>
+                <td>Olivenöl</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="onion">1</td>
+                <td>Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="garlic">1</td>
+                <td>Knoblauchzehe(n)</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="tomatoes">500 g</td>
+                <td>passierte Tomaten</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="butter">40 g</td>
+                <td>Butter</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="flour">40 g</td>
+                <td>Mehl</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="milk">500 ml</td>
+                <td>Milch</td>
+            </tr>
+            <tr>
+                <td class="amount" data-ingredient="cheese">200 g</td>
+                <td>geriebener Käse</td>
+            </tr>
+        </table>
 
     <h2>Zubereitung</h2>
     <div class="informations">

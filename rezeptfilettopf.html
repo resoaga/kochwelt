@@ -1,10 +1,14 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="filettopf.css" />
-
+    <script src="eingabe.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filettopf</title>
@@ -63,67 +67,66 @@
           <p class="time">15.11.2025</p>
         </div>
       </div>
-      <div class="portions">
-        Zutaten für <input type="number" min="1" max="20" value="6" />
-        <button>Stück</button>
-        </div>
+       <div class="portions">
+        Zutaten für <input id="servings" type="number" min="1" max="20" value="6" />
+        <button onclick="updateIngredients()">Stück berechnen</button>
+      </div>
         <div>
-        <table style="padding-top:20px;" >
-            <tr class="ingredients background">
-                <td class="ingredient">1 kg </td>
-                <td> Schweinefilet</td>
-            </tr>
-            <tr class="ingredients">
-                <td class="ingredient">1 EL</td>
-                <td>Öl</td>
-            </tr>
-            <tr class="ingredients background">
-                <td class="ingredient">1 EL</td>
-                <td>Butter</td>
-            </tr>
-            <tr class="ingredients">
-                <td class="ingredient">2 </td>
-                <td>große Zwiebel(n)</td>
-            </tr>
-            <tr class="ingredients background">
-                <td class="ingredient">1</td>
-                <td>Knoblauchzehe(n)</td>
-            </tr>
-            <tr class="ingredients">
-                <td class="ingredient">100 g</td>
-                <td>Katenschinken</td>
-            </tr>
-            <tr class="ingredients background">
-                <td class="ingredient">500 g </td>
-                <td>Champignons</td>
-            </tr>
-            <tr class="ingredients">
-                <td class="ingredient">200</td>
-                <td>ml Fleischbrühe</td>
-            </tr>
-            <tr class="ingredients background">
-                <td class="ingredient">200 ml</td>
-                <td> Sahne</td>
-            </tr>
-            <tr class="ingredients">
-                <td class="ingredient">200 g </td>
-                <td> Crème fraîche</td>
-            </tr>
-            <tr class="ingredients background">
-                <td class="ingredient" >1 EL</td>
-                <td>Tomatenmark</td>
-            </tr>
-            <tr class="ingredients">
-                <td class="ingredient">1 TL</td>
-                <td>Senf</td>
-            </tr>
-            <tr class="ingredients background">
-                <td class="ingredient">1 </td>
-                <td>Bund gehackte Petersilie</td>
-            </tr>
-
+        <table style="padding-top:20px;">
+          <tr class="ingredients background">
+            <td id="potato" class="ingredient">1 kg</td>
+            <td>Schweinefilet</td>
+          </tr>
+          <tr class="ingredients">
+            <td id="oil" class="ingredient">1 EL</td>
+            <td>Öl</td>
+          </tr>
+          <tr class="ingredients background">
+            <td id="butter" class="ingredient">1 EL</td>
+            <td>Butter</td>
+          </tr>
+          <tr class="ingredients">
+            <td id="onion" class="ingredient">2</td>
+            <td>große Zwiebel(n)</td>
+          </tr>
+          <tr class="ingredients background">
+            <td id="garlic" class="ingredient">1</td>
+            <td>Knoblauchzehe(n)</td>
+          </tr>
+          <tr class="ingredients">
+            <td id="ham" class="ingredient">100 g</td>
+            <td>Katenschinken</td>
+          </tr>
+          <tr class="ingredients background">
+            <td id="mushrooms" class="ingredient">500 g</td>
+            <td>Champignons</td>
+          </tr>
+          <tr class="ingredients">
+            <td id="broth" class="ingredient">200 ml</td>
+            <td>Fleischbrühe</td>
+          </tr>
+          <tr class="ingredients background">
+            <td id="cream" class="ingredient">200 ml</td>
+            <td>Sahne</td>
+          </tr>
+          <tr class="ingredients">
+            <td id="creme_fraiche" class="ingredient">200 g</td>
+            <td>Crème fraîche</td>
+          </tr>
+          <tr class="ingredients background">
+            <td id="tomato" class="ingredient">1 EL</td>
+            <td>Tomatenmark</td>
+          </tr>
+          <tr class="ingredients">
+            <td id="mustard" class="ingredient">1 TL</td>
+            <td>Senf</td>
+          </tr>
+          <tr class="ingredients background">
+            <td id="pasley" class="ingredient">1</td>
+            <td>Bund gehackte Petersilie</td>
+          </tr>
         </table>
-        </div>
+      </div>
 
       <h2>Zubereitung</h2>
       <div class="worktime">

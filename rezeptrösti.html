@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <script src="eingabe.js"></script>
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="rösti.css">
@@ -55,30 +55,30 @@
     <img class="recipe-icons" src="./img/icons/calendar-alt-regular.svg"> 17.11.2025
   </div>  
 </div>
-<form>
+<form id="portionForm">
     <label for="servings">Zutaten für</label>
     <input id="servings" type="number" min="1" max="10" value="4"> 
-    <input class="button" type="submit" value="Portionen" onclick="console.log()">
+    <input class="button" type="button" value="Portionen berechnen" onclick="updateIngredients()">
   </form>
     <table>
         <tr>
-            <td>1 kg </td>
+            <td id="potato">1 kg </td>
             <td>große Kartoffeln, festkochend</td>
         </tr>
         <tr>
-            <td>2</td>
+            <td id="onion">2</td>
             <td> Zwiebeln, mittelgroß</td>
         </tr>
         <tr>
-            <td>2</td>
+            <td id="egg">2</td>
             <td>Eier</td>
         </tr>
         <tr>
-            <td>2 EL</td>
+            <td id="butter">2 EL</td>
             <td>Butterschmalz</td>
         </tr>
         <tr>
-            <td>1 Prise</td>
+            <td id="salt">1 Prise</td>
             <td>Salz</td>
         </tr>
         
@@ -89,7 +89,7 @@
         <div class="informations-box"><img class="recipe-icons"  src="./img/icons/clock-regular.svg"> 20 Minuten Zubereitungszeit</div>
         <div class="informations-box"><img class="recipe-icons"  src="./img/icons/clock-regular.svg"> 20 Minuten Vorbereitungszeit</div> 
         </div>
-        
+
         <p>Rezept erstellt von</p>
     <div class="informations">
     <img class="profile" src="./img/profile.png"> Marvin
