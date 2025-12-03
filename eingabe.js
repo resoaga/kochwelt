@@ -59,7 +59,7 @@ function updateIngredients() {
         cremeFraiche: 200, // in g
         tomatoPaste: 1, // in EL
         mustard: 1, // in TL
-        parsley: 1 // Bund
+        parsley: 1, // Bund
     };
 
     // Berechne die Zutaten basierend auf der Portionenanzahl
@@ -144,3 +144,9 @@ function updateIngredient2() {
     document.querySelector(".amount[data-ingredient='milk']").textContent = `${adjustedIngredient2.milk} ml`;
     document.querySelector(".amount[data-ingredient='cheese']").textContent = `${adjustedIngredient2.cheese} g `;
 }
+
+
+
+
+// Rezept des Tages
+
