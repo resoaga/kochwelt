@@ -1,4 +1,7 @@
-function updateIngredients() {
+//Rösti
+
+
+function updateIngredient() {
     // Hole den Wert der Portionen (Standardwert ist 4)
     const servings = document.getElementById("servings").value;
 
@@ -28,16 +31,26 @@ function updateIngredients() {
 
 
 
-function updateIngredient() {
+
+
+
+
+
+
+
+//Filettopf
+
+
+function updateIngredients() {
     // Hole den Wert der Portionen
     const servings = document.getElementById("servings").value;
 
     // Zutaten-Basiswerte für 6 Portionen (originale Menge)
     const baseIngredients = {
-        potato: 1, // in kg
+        meat: 1, // in kg
         oil: 1, // in EL
         butter: 1, // in EL
-        onion: 2, // Anzahl
+        onions: 2, // Anzahl
         garlic: 1, // Anzahl
         ham: 100, // in g
         mushrooms: 500, // in g
@@ -51,10 +64,10 @@ function updateIngredient() {
 
     // Berechne die Zutaten basierend auf der Portionenanzahl
     const adjustedIngredients = {
-        potato: (baseIngredients.potato * servings) / 6,
+        meat: (baseIngredients.meat * servings) / 6,
         oil: (baseIngredients.oil * servings) / 6,
         butter: (baseIngredients.butter * servings) / 6,
-        onion: (baseIngredients.onion * servings) / 6,
+        onions: (baseIngredients.onions * servings) / 6,
         garlic: (baseIngredients.garlic * servings) / 6,
         ham: (baseIngredients.ham * servings) / 6,
         mushrooms: (baseIngredients.mushrooms * servings) / 6,
@@ -67,10 +80,10 @@ function updateIngredient() {
     };
 
     // Update der Zutaten in der Tabelle
-    document.getElementById("potato").textContent = `${adjustedIngredients.potato.toFixed(2)} kg`;
+    document.getElementById("meat").textContent = `${adjustedIngredients.meat.toFixed(2)} kg`;
     document.getElementById("oil").textContent = `${adjustedIngredients.oil.toFixed(2)} EL`;
     document.getElementById("butter").textContent = `${adjustedIngredients.butter.toFixed(2)} EL`;
-    document.getElementById("onion").textContent = `${adjustedIngredients.onion.toFixed(0)}`;
+    document.getElementById("onions").textContent = `${adjustedIngredients.onions.toFixed(0)}`;
     document.getElementById("garlic").textContent = `${adjustedIngredients.garlic.toFixed(0)}`;
     document.getElementById("ham").textContent = `${adjustedIngredients.ham.toFixed(0)} g`;
     document.getElementById("mushrooms").textContent = `${adjustedIngredients.mushrooms.toFixed(0)} g`;
@@ -83,6 +96,8 @@ function updateIngredient() {
 }
 
 
+
+// Lasagne
 
 function updateIngredient2() {
     // Anzahl der Portionen aus dem Eingabefeld holen
@@ -118,14 +133,14 @@ function updateIngredient2() {
     };
 
     // Zutaten in der Tabelle aktualisieren
-    document.querySelector(".amount[data-ingredient='lasagnaPlates']").textContent = `${adjustedIngredients.lasagnaPlates} Lasagneplatten`;
-    document.querySelector(".amount[data-ingredient='mincedMeat']").textContent = `${adjustedIngredients.mincedMeat} g`;
-    document.querySelector(".amount[data-ingredient='oliveOil']").textContent = `${adjustedIngredients.oliveOil} EL `;
-    document.querySelector(".amount[data-ingredient='onion']").textContent = `${adjustedIngredients.onion} `;
-    document.querySelector(".amount[data-ingredient='garlic']").textContent = `${adjustedIngredients.garlic} `;
-    document.querySelector(".amount[data-ingredient='tomatoes']").textContent = `${adjustedIngredients.tomatoes} g`;
-    document.querySelector(".amount[data-ingredient='butter']").textContent = `${adjustedIngredients.butter} g`;
-    document.querySelector(".amount[data-ingredient='flour']").textContent = `${adjustedIngredients.flour} g`;
-    document.querySelector(".amount[data-ingredient='milk']").textContent = `${adjustedIngredients.milk} ml`;
-    document.querySelector(".amount[data-ingredient='cheese']").textContent = `${adjustedIngredients.cheese} g `;
+    document.querySelector(".amount[data-ingredient='lasagnaPlates']").textContent = `${adjustedIngredient2.lasagnaPlates} Lasagneplatten`;
+    document.querySelector(".amount[data-ingredient='mincedMeat']").textContent = `${adjustedIngredient2.mincedMeat} g`;
+    document.querySelector(".amount[data-ingredient='oliveOil']").textContent = `${adjustedIngredient2.oliveOil} EL `;
+    document.querySelector(".amount[data-ingredient='onion']").textContent = `${adjustedIngredient2.onion} `;
+    document.querySelector(".amount[data-ingredient='garlic']").textContent = `${adjustedIngredient2.garlic} `;
+    document.querySelector(".amount[data-ingredient='tomatoes']").textContent = `${adjustedIngredient2.tomatoes} g`;
+    document.querySelector(".amount[data-ingredient='butter']").textContent = `${adjustedIngredient2.butter} g`;
+    document.querySelector(".amount[data-ingredient='flour']").textContent = `${adjustedIngredient2.flour} g`;
+    document.querySelector(".amount[data-ingredient='milk']").textContent = `${adjustedIngredient2.milk} ml`;
+    document.querySelector(".amount[data-ingredient='cheese']").textContent = `${adjustedIngredient2.cheese} g `;
 }
