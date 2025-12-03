@@ -80,9 +80,9 @@ function updateIngredients() {
     };
 
     // Update der Zutaten in der Tabelle
-    document.getElementById("meat").textContent = `${adjustedIngredients.meat.toFixed(2)} kg`;
-    document.getElementById("oil").textContent = `${adjustedIngredients.oil.toFixed(2)} EL`;
-    document.getElementById("butter").textContent = `${adjustedIngredients.butter.toFixed(2)} EL`;
+    document.getElementById("meat").textContent = `${adjustedIngredients.meat.toFixed(0)} kg`;
+    document.getElementById("oil").textContent = `${adjustedIngredients.oil.toFixed(0)} EL`;
+    document.getElementById("butter").textContent = `${adjustedIngredients.butter.toFixed(0)} EL`;
     document.getElementById("onions").textContent = `${adjustedIngredients.onions.toFixed(0)}`;
     document.getElementById("garlic").textContent = `${adjustedIngredients.garlic.toFixed(0)}`;
     document.getElementById("ham").textContent = `${adjustedIngredients.ham.toFixed(0)} g`;
@@ -90,8 +90,8 @@ function updateIngredients() {
     document.getElementById("broth").textContent = `${adjustedIngredients.broth.toFixed(0)} ml`;
     document.getElementById("cream").textContent = `${adjustedIngredients.cream.toFixed(0)} ml`;
     document.getElementById("creme_fraiche").textContent = `${adjustedIngredients.cremeFraiche.toFixed(0)} g`;
-    document.getElementById("tomato").textContent = `${adjustedIngredients.tomatoPaste.toFixed(2)} EL`;
-    document.getElementById("mustard").textContent = `${adjustedIngredients.mustard.toFixed(2)} TL`;
+    document.getElementById("tomato").textContent = `${adjustedIngredients.tomatoPaste.toFixed(0)} EL`;
+    document.getElementById("mustard").textContent = `${adjustedIngredients.mustard.toFixed(0)} TL`;
     document.getElementById("parsley").textContent = `${adjustedIngredients.parsley.toFixed(0)} Bund`;
 }
 
@@ -123,8 +123,8 @@ function updateIngredient2() {
         lasagnaPlates: (baseIngredients.lasagnaPlates * servings) / 4,
         mincedMeat: (baseIngredients.mincedMeat * servings) / 4,
         oliveOil: (baseIngredients.oliveOil * servings) / 4,
-        onion: Math.round((baseIngredients.onion * servings) / 4), // Rundung, da Zwiebeln nicht in Bruchteilen vorhanden sind
-        garlic: Math.round((baseIngredients.garlic * servings) / 4), // Rundung für Knoblauch
+        onion: Math.round((baseIngredients.onion * servings) / 4), // Rundung
+        garlic: Math.round((baseIngredients.garlic * servings) / 4), // Rundung
         tomatoes: (baseIngredients.tomatoes * servings) / 4,
         butter: (baseIngredients.butter * servings) / 4,
         flour: (baseIngredients.flour * servings) / 4,
@@ -175,7 +175,7 @@ const servings = document.getElementById("servings").value;
     // Berechnung der Zutaten basierend auf der Anzahl der Portionen
     const adjustedIngredients2 = {
         wheat: (basedIngredients.wheat * servings) / 12,
-        egg: (basedIngredients.egg * servings) / 12,
+        egg: Math.round((basedIngredients.egg * servings) / 12,),
         oil: (basedIngredients.oil * servings) / 12,
         toast: (basedIngredients.toast * servings) / 12,
         sugar: (basedIngredients.sugar * servings) / 12,
@@ -189,18 +189,18 @@ const servings = document.getElementById("servings").value;
         
     };
     // Zutaten in der Tabelle aktualisieren
-        document.getElementById("wheat").textContent = `${adjustedIngredients2.wheat.toFixed(2)} g`;
-    document.getElementById("egg").textContent = `${adjustedIngredients2.egg.toFixed(2)} `;
-    document.getElementById("oil").textContent = `${adjustedIngredients2.oil.toFixed(2)} EL`;
-    document.getElementById("toast").textContent = `${adjustedIngredients2.toast.toFixed(0)}Scheiben`;
+        document.getElementById("wheat").textContent = `${adjustedIngredients2.wheat.toFixed(0)} g`;
+    document.getElementById("egg").textContent = `${adjustedIngredients2.egg.toFixed(0)} `;
+    document.getElementById("oil").textContent = `${adjustedIngredients2.oil.toFixed(0)} EL`;
+    document.getElementById("toast").textContent = `${adjustedIngredients2.toast.toFixed(0)} Scheiben`;
     document.getElementById("sugar").textContent = `${adjustedIngredients2.sugar.toFixed(0)} g`;
     document.getElementById("zimt").textContent = `${adjustedIngredients2.zimt.toFixed(0)} TL`;
     document.getElementById("nuts").textContent = `${adjustedIngredients2.nuts.toFixed(0)} g`;
     document.getElementById("apple").textContent = `${adjustedIngredients2.apple.toFixed(0)} kg`;
     document.getElementById("citrus").textContent = `${adjustedIngredients2.citrus.toFixed(0)} EL`;
     document.getElementById("cranberry").textContent = `${adjustedIngredients2.cranberry.toFixed(0)} g`;
-    document.getElementById("butter").textContent = `${adjustedIngredients2.butter.toFixed(2)} EL`;
-    document.getElementById("powderdsugar").textContent = `${adjustedIngredients2.powderdsugar.toFixed(2)} EL`;
+    document.getElementById("butter").textContent = `${adjustedIngredients2.butter.toFixed(0)} EL`;
+    document.getElementById("powderdsugar").textContent = `${adjustedIngredients2.powderdsugar.toFixed(0)} EL`;
    
 
 
