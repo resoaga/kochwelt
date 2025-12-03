@@ -19,12 +19,18 @@ function updateIngredient() {
     const newButter = (baseButter / 4) * servings;
     const newSalt = (baseSalt / 4) * servings;
 
+    if (servings >=1 && servings <=20){
+
     // Setze die neuen Werte in die Tabelle
     document.getElementById("potato").innerText = newPotato + " kg";
     document.getElementById("onion").innerText = newOnion;
     document.getElementById("egg").innerText = newEgg;
     document.getElementById("butter").innerText = newButter + " EL";
     document.getElementById("salt").innerText = newSalt + " Prise";
+    }
+    else {
+        alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
+    }
     }
 
 
@@ -79,6 +85,8 @@ function updateIngredients() {
         parsley: (baseIngredients.parsley * servings) / 6
     };
 
+    if (servings >=1 && servings <=20){
+
     // Update der Zutaten in der Tabelle
     document.getElementById("meat").textContent = `${adjustedIngredients.meat.toFixed(2)} kg`;
     document.getElementById("oil").textContent = `${adjustedIngredients.oil.toFixed(2)} EL`;
@@ -94,7 +102,10 @@ function updateIngredients() {
     document.getElementById("mustard").textContent = `${adjustedIngredients.mustard.toFixed(2)} TL`;
     document.getElementById("parsley").textContent = `${adjustedIngredients.parsley.toFixed(0)} Bund`;
 }
-
+else {
+    alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
+}
+}
 
 
 // Lasagne
@@ -132,6 +143,8 @@ function updateIngredient2() {
         cheese: (baseIngredients.cheese * servings) / 4
     };
 
+    if (servings >=1 && servings <=20){
+
     // Zutaten in der Tabelle aktualisieren
     document.querySelector(".amount[data-ingredient='lasagnaPlates']").textContent = `${adjustedIngredient2.lasagnaPlates} Lasagneplatten`;
     document.querySelector(".amount[data-ingredient='mincedMeat']").textContent = `${adjustedIngredient2.mincedMeat} g`;
@@ -144,7 +157,10 @@ function updateIngredient2() {
     document.querySelector(".amount[data-ingredient='milk']").textContent = `${adjustedIngredient2.milk} ml`;
     document.querySelector(".amount[data-ingredient='cheese']").textContent = `${adjustedIngredient2.cheese} g `;
 }
-
+else {
+    alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
+}
+}
 
 
 
@@ -188,6 +204,9 @@ const servings = document.getElementById("servings").value;
         powderdsugar: (basedIngredients.powderdsugar * servings) / 12,
         
     };
+
+    if (servings >=1 && servings <=48){
+
     // Zutaten in der Tabelle aktualisieren
         document.getElementById("wheat").textContent = `${adjustedIngredients2.wheat.toFixed(2)} g`;
     document.getElementById("egg").textContent = `${adjustedIngredients2.egg.toFixed(2)} `;
@@ -209,4 +228,8 @@ const servings = document.getElementById("servings").value;
 
 
 
+}
+else {
+    alert('Die Portionsmenge sollte min 1 und max 48 betragen.')
+}
 }
