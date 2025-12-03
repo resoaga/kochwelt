@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="eingabe.js"></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="dayreciept.css" />
     <link rel="stylesheet" href="footer.css" />
@@ -60,13 +61,13 @@
       <div class="portions">
         Zutaten für
         <input
-          id="portionen-input"
+          id="servings"
           type="number"
           min="12"
           max="48"
-          placeholder="12"
+          value="12"
         />
-        <button onclick="portionenberechnen()">Portionen</button>
+        <button onclick="updateIngredients2()">Portionen</button>
       </div>
       <div>
         <table style="padding-top: 20px">
@@ -79,7 +80,7 @@
             <td>Ei</td>
           </tr>
           <tr class="ingredients background">
-            <td id="oil">2,5 EL</td>
+            <td id="oil">2 EL</td>
             <td>Öl</td>
           </tr>
           <tr class="ingredients">
@@ -91,7 +92,7 @@
             <td>Zucker</td>
           </tr>
           <tr class="ingredients">
-            <td id="zimt-menge">1 TL</td>
+            <td id="zimt">1 TL</td>
             <td>Zimt</td>
           </tr>
           <tr class="ingredients background">
@@ -107,7 +108,7 @@
             <td> Zitronensaft</td>
           </tr>
           <tr class="ingredients">
-            <td id="Cranberry">50 g</td>
+            <td id="cranberry">50 g</td>
             <td> getr. Cranberrys</td>
           </tr>
           <tr class="ingredients background">

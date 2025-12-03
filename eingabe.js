@@ -150,3 +150,63 @@ function updateIngredient2() {
 
 // Rezept des Tages
 
+function  updateIngredients2(){
+
+
+const servings = document.getElementById("servings").value;
+
+
+ // Basiswerte der Zutaten für 12 Portionen
+ const basedIngredients = {
+        wheat: 50, // g
+        egg: 1, // Stück
+        oil: 2, // EL
+        toast: 2, // Stück
+        sugar: 75, // g
+        zimt: 1, // TL
+        nuts: 50, // g
+        apple: 1, // kg
+        citrus: 2, // EL
+        cranberry: 50, // g
+        butter: 5, // EL
+        powderdsugar: 2, // EL
+  }
+
+    // Berechnung der Zutaten basierend auf der Anzahl der Portionen
+    const adjustedIngredients2 = {
+        wheat: (basedIngredients.wheat * servings) / 12,
+        egg: (basedIngredients.egg * servings) / 12,
+        oil: (basedIngredients.oil * servings) / 12,
+        toast: (basedIngredients.toast * servings) / 12,
+        sugar: (basedIngredients.sugar * servings) / 12,
+        zimt: (basedIngredients.zimt * servings) / 12,
+        nuts: (basedIngredients.nuts * servings) / 12,
+        apple: (basedIngredients.apple * servings) / 12,
+        citrus: (basedIngredients.citrus * servings) / 12,
+        cranberry: (basedIngredients.cranberry * servings) / 12,
+        butter: (basedIngredients.butter * servings) / 12,
+        powderdsugar: (basedIngredients.powderdsugar * servings) / 12,
+        
+    };
+    // Zutaten in der Tabelle aktualisieren
+        document.getElementById("wheat").textContent = `${adjustedIngredients2.wheat.toFixed(2)} g`;
+    document.getElementById("egg").textContent = `${adjustedIngredients2.egg.toFixed(2)} `;
+    document.getElementById("oil").textContent = `${adjustedIngredients2.oil.toFixed(2)} EL`;
+    document.getElementById("toast").textContent = `${adjustedIngredients2.toast.toFixed(0)}Scheiben`;
+    document.getElementById("sugar").textContent = `${adjustedIngredients2.sugar.toFixed(0)} g`;
+    document.getElementById("zimt").textContent = `${adjustedIngredients2.zimt.toFixed(0)} TL`;
+    document.getElementById("nuts").textContent = `${adjustedIngredients2.nuts.toFixed(0)} g`;
+    document.getElementById("apple").textContent = `${adjustedIngredients2.apple.toFixed(0)} kg`;
+    document.getElementById("citrus").textContent = `${adjustedIngredients2.citrus.toFixed(0)} EL`;
+    document.getElementById("cranberry").textContent = `${adjustedIngredients2.cranberry.toFixed(0)} g`;
+    document.getElementById("butter").textContent = `${adjustedIngredients2.butter.toFixed(2)} EL`;
+    document.getElementById("powderdsugar").textContent = `${adjustedIngredients2.powderdsugar.toFixed(2)} EL`;
+   
+
+
+
+
+
+
+
+}
