@@ -42,7 +42,7 @@ input {
 
 }
 
-.button {
+button {
   background-color: green;
   border: 0px;
   color: white;
