@@ -1,21 +1,30 @@
 footer {
   background-color: #403b3b;
+  width: 100%;
+}
+
+.footer-wrapper {
+  box-sizing: border-box;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 10px;
-
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 150px;
 }
 
 .footer-logo {
-  height: 80px;
+  width: 200px;
+  height: auto;
+}
+
+.footer-logo-mobile {
+  display: none;
 }
 
 .icons {
-  height: 50px;
+  height: 40px;
   padding-right: 10px;
 }
 
@@ -25,7 +34,11 @@ footer {
 }
 
 .link-text {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 14px;
 }
 
 .footer-link:hover {
@@ -38,39 +51,103 @@ footer {
   display: none;
 }
 
-@media (max-width: 649px) {
-  .icons {
-    height: 30px;
-    padding-right: 15px;
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    padding: 20px 100px;
   }
+
+  .footer-logo {
+    width: 180px;
+  }
+
+  .icons {
+    height: 35px;
+  }
+
+  .link-text {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-wrapper {
+    padding: 20px 70px;
+  }
+
+  .footer-logo {
+    width: 160px;
+  }
+
+  .icons {
+    height: 32px;
+  }
+
+  .link-text {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-wrapper {
+    padding: 20px 40px;
+  }
+
+  .footer-logo {
+    width: 140px;
+  }
+
+  .icons {
+    height: 28px;
+  }
+
+  .link-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-wrapper {
+    padding: 15px 16px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
   .footer-logo {
     display: none;
   }
+
   .footer-logo-mobile {
     display: block;
-    height: 40px;
-    padding-right: 10px;
-    padding-left: 20px;
+    width: 50px;
+    height: auto;
   }
+
+  .icons {
+    height: 24px;
+    padding-right: 8px;
+  }
+
   .link-text {
-    font-size: 20px;
+    font-size: 12px;
   }
+
+  footer p {
+    font-size: 10px;
+    text-align: center;
+  }
+
   .social-media {
     display: flex;
-    flex-direction: column;
-    padding-left: 10px;
+    flex-direction: row;
     gap: 5px;
-  }
-}
-@media (min-width: 650px) and (max-width: 900px) {
-  .icons {
-    height: 35px;
-    padding-right: 10px;
-  }
-  .footer-logo {
-    height: 50px;
-  }
-  .link-text {
-    font-size: 22px;
   }
 }

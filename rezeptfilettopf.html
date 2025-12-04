@@ -1,13 +1,10 @@
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="filettopf.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo_small_white.png" />
     <script src="eingabe.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,29 +18,29 @@
             ><img class="Kochweltlogo" src="./img/logo.png" alt="Kochwelt"
           /></a>
         </div>
-
-        <nav>
+        <button class="burger-menu" aria-label="Menu" onclick="myFunction()">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <nav id="myLinks">
           <h2 class="start">
             <a href="index.html" class="navlink navihide">Start</a>
           </h2>
-
           <h2 class="dayrecipe">
             <a href="dayreciept.html" class="navlink navhide"
               >Rezept des Tages</a
             >
           </h2>
-
           <h2 class="contact">
             <a href="kontakt.html" class="navlink navihide">Kontakt</a>
           </h2>
-
           <h2 class="imprint">
             <a href="impressum.html" class="navlink navihide">Impressum</a>
           </h2>
         </nav>
       </div>
     </header>
-
     <main>
       <section class="filetopf">
         <h1>Filettopf aus Schweinefilet</h1>
@@ -67,12 +64,13 @@
           <p class="time">15.11.2025</p>
         </div>
       </div>
-       <div class="portions">
-        Zutaten für <input id="servings" type="number" min="6" max="30" value="6" />
+      <div class="portions">
+        Zutaten für
+        <input id="servings" type="number" min="6" max="30" value="6" />
         <button onclick="updateIngredients()">Portionen</button>
       </div>
-        <div>
-        <table style="padding-top:20px;">
+      <div>
+        <table style="padding-top: 20px">
           <tr class="ingredients background">
             <td id="meat" class="ingredient">1 kg</td>
             <td>Schweinefilet</td>
@@ -200,44 +198,45 @@
         </div>
       </div>
     </main>
-
     <footer>
-      <div>
-        <a href="index.html">
+      <div class="footer-wrapper">
+        <div>
           <img class="footer-logo" src="./img/logo_white.png" alt="logo" />
-        <img
-          class="footer-logo-mobile hide"
-          src="./img/logo_small_white.png"
-          alt="logo"
-        /></a>
-      </div>
-      <div>
-        <div class="link-text">
-          <a class="footer-link" href="impressum.html">Impressum</a> |
-          <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+          <img
+            class="footer-logo-mobile hide"
+            src="./img/logo_small_white.png"
+            alt="logo"
+          />
         </div>
-        <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
-      </div>
-      <div class="social-media">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.facebook.com/"
-          ><img class="icons" src="./img/facebook.png" alt="facebook"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.instagram.com/"
-          ><img class="icons" src="./img/instagram.png" alt="instagram"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.youtube.com/"
-          ><img class="icons" src="./img/youtube.png" alt="youtube"
-        /></a>
+        <div>
+          <div class="link-text">
+            <a class="footer-link" href="impressum.html">Impressum</a> |
+            <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="social-media">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/"
+            ><img class="icons" src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/"
+            ><img class="icons" src="./img/instagram.png" alt="instagram"
+          /></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/"
+            ><img class="icons" src="./img/youtube.png" alt="youtube"
+          /></a>
+        </div>
       </div>
     </footer>
+    <script src="burgermenu.js"></script>
   </body>
 </html>

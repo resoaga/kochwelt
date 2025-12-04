@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="datenschutz.css" />
@@ -12,14 +12,21 @@
     <header>
       <div class="headerdisplay">
         <div>
-          <a href="index.html"><img class="Kochweltlogo" src="./img/logo.png" alt="Kochwelt" /></a>
+          <a href="index.html"
+            ><img class="Kochweltlogo" src="./img/logo.png" alt="Kochwelt"
+          /></a>
         </div>
-        <nav>
+        <button class="burger-menu" aria-label="Menu" onclick="myFunction()">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <nav id="myLinks">
           <h2 class="start">
             <a href="index.html" class="navlink navihide">Start</a>
           </h2>
           <h2 class="dayrecipe">
-            <a href="rezeptdestages.html" class="navlink navhide"
+            <a href="dayreciept.html" class="navlink navhide"
               >Rezept des Tages</a
             >
           </h2>
@@ -360,42 +367,44 @@
       </div>
     </main>
     <footer>
-      <div>
-        <a href="index.html">
+      <div class="footer-wrapper">
+        <div>
           <img class="footer-logo" src="./img/logo_white.png" alt="logo" />
-        <img
-          class="footer-logo-mobile hide"
-          src="./img/logo_small_white.png"
-          alt="logo"
-        /></a>
-      </div>
-      <div>
-        <div class="link-text">
-          <a class="footer-link" href="impressum.html">Impressum</a> |
-          <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+          <img
+            class="footer-logo-mobile hide"
+            src="./img/logo_small_white.png"
+            alt="logo"
+          />
         </div>
-        <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
-      </div>
-      <div class="social-media">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.facebook.com/"
-          ><img class="icons" src="./img/facebook.png" alt="facebook"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.instagram.com/"
-          ><img class="icons" src="./img/instagram.png" alt="instagram"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.youtube.com/"
-          ><img class="icons" src="./img/youtube.png" alt="youtube"
-        /></a>
+        <div>
+          <div class="link-text">
+            <a class="footer-link" href="impressum.html">Impressum</a> |
+            <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="social-media">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/"
+            ><img class="icons" src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/"
+            ><img class="icons" src="./img/instagram.png" alt="instagram"
+          /></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/"
+            ><img class="icons" src="./img/youtube.png" alt="youtube"
+          /></a>
+        </div>
       </div>
     </footer>
+    <script src="burgermenu.js"></script>
   </body>
 </html>

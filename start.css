@@ -1,51 +1,55 @@
 body {
-  margin: 0;
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
+
 main {
   width: 100%;
 }
+
 main img {
   border-radius: 10px;
   border: solid 1px rgb(138, 136, 136);
 }
-.main-wrapper {
-  margin: 0 auto;
-}
 
 .hero-section {
   width: 100%;
-  padding: 100px 0px;
+  padding: 100px 0;
 }
 
 .hero {
-  display: flex;
-  gap: 20px;
-  padding: 0px 50px;
-  justify-content: center;
+  box-sizing: border-box;
+  max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 150px;
+  justify-content: flex-start;
 }
+
 .hero img {
-  width: 450px;
+  flex: 0 0 45%;
+  max-width: 450px;
   height: auto;
   object-fit: cover;
-  margin-right: 30px;
 }
+
 .recipeoftheday {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hero h1 {
   font-size: 24px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .hero p {
   font-size: 16px;
   margin-top: 10px;
-  margin-bottom: 80px;
-  max-width: 500px;
+  margin-bottom: 60px;
 }
 
 .description {
@@ -56,12 +60,13 @@ main img {
 
 .button {
   background-color: green;
-  border: 0px;
+  border: 0;
   border-radius: 3px;
   color: white;
   padding: 10px 70px;
   text-align: center;
   display: inline-block;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
@@ -70,40 +75,33 @@ main img {
   background-color: rgb(109, 204, 0);
   text-shadow: rgb(19, 163, 0) 0 1px 1px;
 }
+
 .cta-section {
   width: 100%;
   background-color: #ebeceb;
-  background-size: cover;
-  background-position: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  position: relative;
+  padding: 20px 0 50px;
 }
 
 .cta {
-  background-color: #ebeceb;
-  background-size: cover;
-  background-position: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  position: relative;
-  max-width: 1200px;
+  box-sizing: border-box;
+  max-width: 1440px;
   margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 150px;
 }
 
 .title {
   font-size: 20px;
-  margin: 30px 0px 30px 0px;
-  justify-items: center;
+  margin: 30px 0;
+  text-align: center;
 }
+
 .takerecipe {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   text-align: center;
 }
+
 .recipe {
   display: flex;
   flex-direction: column;
@@ -117,24 +115,22 @@ main img {
 }
 
 .recipe h2 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .comparison-section {
-  display: flex;
-  align-items: center;
-  padding: 70px 0px;
-  justify-content: center;
   width: 100%;
+  padding: 70px 0;
 }
+
 .comparison {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 50px;
-  width: 100%;
+  padding: 0 150px;
 }
 
 .comparison-text {
@@ -145,7 +141,149 @@ main img {
 }
 
 .comparison img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 0 100px;
+  }
+
+  .hero img {
+    flex: 0 0 40%;
+    max-width: 380px;
+  }
+
+  .cta {
+    padding: 0 100px;
+  }
+
+  .comparison {
+    padding: 0 100px;
+  }
+
+  .comparison img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .hero {
+    padding: 0 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero img {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+
+  .cta {
+    padding: 0 70px;
+  }
+
+  .recipe img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .comparison {
+    padding: 0 70px;
+  }
+
+  .comparison-text {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .comparison img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .cta {
+    padding: 0 40px;
+  }
+
+  .comparison {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .takerecipe {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .recipe img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 0;
+  }
+
+  .hero {
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .hero p {
+    margin-bottom: 20px;
+  }
+
+  .button {
+    padding: 10px 30px;
+  }
+
+  .cta {
+    padding: 0 16px;
+  }
+
+  .comparison {
+    padding: 0 16px;
+  }
+
+  .comparison img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
 }

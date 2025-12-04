@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <script src="eingabe.js"></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="dayreciept.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo_small_white.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept des Tages</title>
@@ -17,7 +18,12 @@
             ><img class="Kochweltlogo" src="./img/logo.png" alt="Kochwelt"
           /></a>
         </div>
-        <nav>
+        <button class="burger-menu" aria-label="Menu" onclick="myFunction()">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <nav id="myLinks">
           <h2 class="start">
             <a href="index.html" class="navlink navihide">Start</a>
           </h2>
@@ -60,20 +66,14 @@
       </div>
       <div class="portions">
         Zutaten für
-        <input
-          id="servings"
-          type="number"
-          min="12"
-          max="48"
-          value="12"
-        />
+        <input id="servings" type="number" min="12" max="48" value="12" />
         <button onclick="updateIngredients2()">Portionen</button>
       </div>
       <div>
         <table style="padding-top: 20px">
           <tr class="ingredients background">
             <td id="wheat">50 g</td>
-            <td> Weizenmehl</td>
+            <td>Weizenmehl</td>
           </tr>
           <tr class="ingredients">
             <td id="egg">1</td>
@@ -97,27 +97,27 @@
           </tr>
           <tr class="ingredients background">
             <td id="nuts">50 g</td>
-            <td> gemahlene Haselnüsse</td>
+            <td>gemahlene Haselnüsse</td>
           </tr>
           <tr class="ingredients">
             <td id="apple">1 kg</td>
-            <td> Äpfel</td>
+            <td>Äpfel</td>
           </tr>
           <tr class="ingredients background">
             <td id="citrus">2 EL</td>
-            <td> Zitronensaft</td>
+            <td>Zitronensaft</td>
           </tr>
           <tr class="ingredients">
             <td id="cranberry">50 g</td>
-            <td> getr. Cranberrys</td>
+            <td>getr. Cranberrys</td>
           </tr>
           <tr class="ingredients background">
             <td id="butter">5 EL</td>
-            <td> geschmolzene Butter</td>
+            <td>geschmolzene Butter</td>
           </tr>
           <tr class="ingredients">
             <td id="powderdsugar">2 EL</td>
-            <td> Puderzucker</td>
+            <td>Puderzucker</td>
           </tr>
         </table>
       </div>
@@ -171,43 +171,44 @@
     </main>
   </body>
   <footer>
-    <div>
-      <a href="index.html">
+    <div class="footer-wrapper">
+      <div>
         <img class="footer-logo" src="./img/logo_white.png" alt="logo" />
-      <img
-        class="footer-logo-mobile hide"
-        src="./img/logo_small_white.png"
-        alt="logo"
-      /></a>
-    </div>
-    <div>
-      <div class="link-text">
-        <a class="footer-link" href="impressum.html">Impressum</a> |
-        <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+        <img
+          class="footer-logo-mobile hide"
+          src="./img/logo_small_white.png"
+          alt="logo"
+        />
       </div>
-      <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
-    </div>
-    <div class="social-media">
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.facebook.com/"
-        ><img class="icons" src="./img/facebook.png" alt="facebook"
-      /></a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.instagram.com/"
-        ><img class="icons" src="./img/instagram.png" alt="instagram"
-      /></a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.youtube.com/"
-        ><img class="icons" src="./img/youtube.png" alt="youtube"
-      /></a>
+      <div>
+        <div class="link-text">
+          <a class="footer-link" href="impressum.html">Impressum</a> |
+          <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+        </div>
+        <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+      </div>
+      <div class="social-media">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/"
+          ><img class="icons" src="./img/facebook.png" alt="facebook"
+        /></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/"
+          ><img class="icons" src="./img/instagram.png" alt="instagram"
+        /></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.youtube.com/"
+          ><img class="icons" src="./img/youtube.png" alt="youtube"
+        /></a>
+      </div>
     </div>
   </footer>
-
+  <script src="burgermenu.js"></script>
   <script src="./eingabe.js"></script>
 </html>

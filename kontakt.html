@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo_small_white.png" />
     <script src="script.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +18,12 @@
             ><img class="Kochweltlogo" src="./img/logo.png" alt="Kochwelt"
           /></a>
         </div>
-        <nav>
+        <button class="burger-menu" aria-label="Menu" onclick="myFunction()">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <nav id="myLinks">
           <h2 class="start">
             <a href="index.html" class="navlink navihide">Start</a>
           </h2>
@@ -36,58 +42,61 @@
       </div>
     </header>
     <main>
-      <div class="contact-box"><h1>Kontaktiere uns</h1>
-      <form onsubmit="sendMail(event)" class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      <div class="contact-box">
+        <h1>Kontaktiere uns</h1>
+        <form onsubmit="sendMail(event)" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="email">E-Mail:</label>
-        <input type="text" id="email" name="email" required />
+          <label for="email">E-Mail:</label>
+          <input type="text" id="email" name="email" required />
 
-        <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit" class="button">Absenden</button>
-      </form>
-    </div>
+          <button type="submit" class="button">Absenden</button>
+        </form>
+      </div>
     </main>
     <footer>
-      <div>
-        <a href="index.html">
-        <img class="footer-logo" src="./img/logo_white.png" alt="logo" />
-        <img
-          class="footer-logo-mobile hide"
-          src="./img/logo_small_white.png"
-          alt="logo"
-        /></a>
-      </div>
-      <div>
-        <div class="link-text">
-          <a class="footer-link" href="impressum.html">Impressum</a> |
-          <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+      <div class="footer-wrapper">
+        <div>
+          <img class="footer-logo" src="./img/logo_white.png" alt="logo" />
+          <img
+            class="footer-logo-mobile hide"
+            src="./img/logo_small_white.png"
+            alt="logo"
+          />
         </div>
-        <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
-      </div>
-      <div class="social-media">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.facebook.com/"
-          ><img class="icons" src="./img/facebook.png" alt="facebook"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.instagram.com/"
-          ><img class="icons" src="./img/instagram.png" alt="instagram"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.youtube.com/"
-          ><img class="icons" src="./img/youtube.png" alt="youtube"
-        /></a>
+        <div>
+          <div class="link-text">
+            <a class="footer-link" href="impressum.html">Impressum</a> |
+            <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+          </div>
+          <p>&copy; 2025 Kochwelt. Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="social-media">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/"
+            ><img class="icons" src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/"
+            ><img class="icons" src="./img/instagram.png" alt="instagram"
+          /></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/"
+            ><img class="icons" src="./img/youtube.png" alt="youtube"
+          /></a>
+        </div>
       </div>
     </footer>
+    <script src="burgermenu.js"></script>
   </body>
 </html>
