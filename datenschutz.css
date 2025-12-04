@@ -1,42 +1,117 @@
 body {
-  font-family: "Raleway, sans-serif";
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  background-color: #ebeceb;
 }
 
 .datenschutz {
-  text-align: start;
-  padding: 40px 300px 80px;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  background-color: #ebe9e9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 150px;
+  box-sizing: border-box;
 }
 
 .datenschutz h1 {
-  text-align: center;
+  font-size: 40px;
   color: #333;
-  padding-bottom: 30px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .datenschutz h2 {
-  margin-top: 40px;
+  font-size: 28px;
   color: #2c2b2b;
-  font-size: 30px;
-  padding-top: 70px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .datenschutz h3 {
-  margin-top: 20px;
+  font-size: 22px;
   color: #1b1b1b;
-  font-size: 25px;
-  padding-top: 70px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.impressum p {
-  margin: 15px 0;
+.datenschutz p {
   font-size: 16px;
   color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
+.datenschutz ul {
+  color: #555;
+  line-height: 1.8;
+}
 
+@media (max-width: 1200px) {
+  .datenschutz {
+    padding: 50px 100px;
+  }
 
+  .datenschutz h1 {
+    font-size: 36px;
+  }
+
+  .datenschutz h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .datenschutz {
+    padding: 40px 70px;
+  }
+
+  .datenschutz h1 {
+    font-size: 32px;
+  }
+
+  .datenschutz h2 {
+    font-size: 22px;
+  }
+
+  .datenschutz h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .datenschutz {
+    padding: 30px 40px;
+  }
+
+  .datenschutz h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .datenschutz {
+    padding: 20px 16px;
+  }
+
+  .datenschutz h1 {
+    font-size: 24px;
+  }
+
+  .datenschutz h2 {
+    font-size: 20px;
+  }
+
+  .datenschutz h3 {
+    font-size: 16px;
+  }
+
+  .datenschutz p {
+    font-size: 14px;
+  }
+}

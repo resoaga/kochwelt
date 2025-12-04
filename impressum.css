@@ -1,33 +1,93 @@
 body {
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  font-family: "Raleway, sans-serif";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  background-color: #ebeceb;
 }
 
 .impressum {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 150px;
+  box-sizing: border-box;
   text-align: center;
-  padding: 40px 20px 80px;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  background-color: #ebe9e9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .impressum h1 {
-  text-align: center;
+  font-size: 40px;
   color: #333;
-  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .impressum h2 {
-  margin-top: 40px;
+  font-size: 24px;
   color: #047e18;
-  font-size: 20px;
-  padding-top: 70px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .impressum p {
-  margin: 15px 0;
   font-size: 16px;
   color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+  .impressum {
+    padding: 50px 100px;
+  }
+
+  .impressum h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 900px) {
+  .impressum {
+    padding: 40px 70px;
+  }
+
+  .impressum h1 {
+    font-size: 32px;
+  }
+
+  .impressum h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .impressum {
+    padding: 30px 40px;
+  }
+
+  .impressum h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .impressum {
+    padding: 20px 16px;
+  }
+
+  .impressum h1 {
+    font-size: 24px;
+  }
+
+  .impressum h2 {
+    font-size: 18px;
+  }
+
+  .impressum p {
+    font-size: 14px;
+  }
 }
