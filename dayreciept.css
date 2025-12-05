@@ -214,6 +214,10 @@ img[src="./img/profile.png"] {
     font-size: 16px;
   }
 
+  .portions {
+    font-size: 16px;
+  }
+
   .apfelstrudel h1 {
     font-size: 24px;
   }
@@ -235,5 +239,8 @@ img[src="./img/profile.png"] {
 
   .ingredients td:first-child {
     width: 80px;
+  }
+  .portions input {
+    width: 40px;
   }
 }
