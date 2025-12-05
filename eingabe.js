@@ -1,39 +1,46 @@
 //Rösti
 
 
-function updateIngredient() {
-    // Hole den Wert der Portionen (Standardwert ist 4)
+function updatedIngredient() {
+
+
     const servings = document.getElementById("servings").value;
 
-    // Zutaten-Variablen (die Basiswerte für 4 Portionen)
-    const basePotato = 1; // in kg
-    const baseOnion = 2; // Anzahl
-    const baseEgg = 2; // Anzahl
-    const baseButter = 2; // Esslöffel
-    const baseSalt = 1; // Prise
+    const basedIngredient = {
+        potato: 1, // kg
+        onion: 2, // Stück
+        egg: 2, // Stück
+        butter: 2, // EL
+        salt: 1,// Prise
+   
+        
+  }
 
-    // Berechne die neuen Mengen basierend auf der Anzahl der Portionen
-    const newPotato = (basePotato / 4) * servings;
-    const newOnion = (baseOnion / 4) * servings;
-    const newEgg = (baseEgg / 4) * servings;
-    const newButter = (baseButter / 4) * servings;
-    const newSalt = (baseSalt / 4) * servings;
 
-    if (servings >=1 && servings <=20){
+  const adjustedIngredients3 = {
+        potato: Math.round((basedIngredient.potato * servings)) / 4,
+        onion: Math.round((basedIngredient.onion * servings)) / 4,
+        butter: (basedIngredient.butter * servings) / 4,
+        egg: Math.round((basedIngredient.egg * servings)) / 4,
+        salt: Math.round((basedIngredient.salt * servings)) / 4,
 
-    // Setze die neuen Werte in die Tabelle
-    document.getElementById("potato").innerText = newPotato + " kg";
-    document.getElementById("onion").innerText = newOnion;
-    document.getElementById("egg").innerText = newEgg;
-    document.getElementById("butter").innerText = newButter + " EL";
-    document.getElementById("salt").innerText = newSalt + " Prise";
+
+  }
+
+  if (servings >=1 && servings <=20){
+ document.getElementById("potato").textContent = `${adjustedIngredients3.potato.toFixed(0)} kg`;
+    document.getElementById("onion").textContent = `${adjustedIngredients3.onion.toFixed(0)} `;
+    document.getElementById("butter").textContent = `${adjustedIngredients3.butter.toFixed(0)} EL`;
+    document.getElementById("egg").textContent = `${adjustedIngredients3.egg.toFixed(0)}`;
+    document.getElementById("salt").textContent = `${adjustedIngredients3.salt.toFixed(0)} Prise`;
     }
+
     else {
         alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
     }
-    }
+    
 
-
+}
 
 
 
