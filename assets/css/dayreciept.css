@@ -157,15 +157,21 @@ main ol p {
 .recipe-description p {
   margin-bottom: 15px;
 }
-
-img[src="./img/profile.png"] {
+.profilename {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.profilename img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
 }
-
+.profilename p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
 @media (max-width: 1200px) {
   main {
     padding: 50px 100px;
