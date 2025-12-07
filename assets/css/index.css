@@ -69,6 +69,7 @@ main img {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 100ms ease;
 }
 
 .button:hover {

@@ -15,22 +15,22 @@ main img {
   border-radius: 10px;
 }
 
-.apfelstrudel {
+.filetopf {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.apfelstrudel h1 {
+.filetopf h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.apfelstrudel img {
+.filetopf img {
   align-self: center;
 }
 
-.apfelstrudel img {
+.filetopf img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -92,9 +92,9 @@ button,
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 100ms ease;
 }
 
-button:hover,
 .button:hover {
   background-color: rgb(109, 204, 0);
   text-shadow: rgb(19, 163, 0) 0 1px 1px;
@@ -112,7 +112,7 @@ table {
   padding: 14px 16px;
 }
 
-.ingredients td:first-child {
+.ingredient {
   width: 120px;
   text-align: start;
   font-weight: 500;
@@ -136,17 +136,20 @@ main h2 {
   margin-bottom: 10px;
 }
 
-main ol {
+.recipe {
   line-height: 1.8;
+}
+
+.recipe ol {
   padding-left: 0;
   list-style: none;
 }
 
-main ol li {
+.recipe li {
   margin-bottom: 15px;
 }
 
-main ol p {
+.recipe p {
   margin: 0;
 }
 
@@ -158,12 +161,31 @@ main ol p {
   margin-bottom: 15px;
 }
 
-img[src="./img/profile.png"] {
+.profile {
+  margin-top: 30px;
+}
+
+.profile h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.profilename {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profilename img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
+}
+
+.profilename p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
@@ -177,7 +199,7 @@ img[src="./img/profile.png"] {
     padding: 40px 70px;
   }
 
-  .apfelstrudel img {
+  .filetopf img {
     height: 150px;
   }
 
@@ -198,7 +220,7 @@ img[src="./img/profile.png"] {
     gap: 10px;
   }
 
-  .apfelstrudel img {
+  .filetopf img {
     height: 110px;
   }
 
@@ -214,15 +236,11 @@ img[src="./img/profile.png"] {
     font-size: 16px;
   }
 
-  .portions {
-    font-size: 16px;
-  }
-
-  .apfelstrudel h1 {
+  .filetopf h1 {
     font-size: 24px;
   }
 
-  .apfelstrudel img {
+  .filetopf img {
     height: 100px;
   }
 
@@ -237,10 +255,12 @@ img[src="./img/profile.png"] {
     font-size: 14px;
   }
 
-  .ingredients td:first-child {
+  .ingredient {
     width: 80px;
   }
-  .portions input {
-    width: 40px;
+
+  .profilename {
+    flex-direction: column;
+    text-align: center;
   }
 }

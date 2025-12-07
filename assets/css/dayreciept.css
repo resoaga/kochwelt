@@ -15,22 +15,22 @@ main img {
   border-radius: 10px;
 }
 
-.filetopf {
+.apfelstrudel {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.filetopf h1 {
+.apfelstrudel h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.filetopf img {
+.apfelstrudel img {
   align-self: center;
 }
 
-.filetopf img {
+.apfelstrudel img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -92,9 +92,9 @@ button,
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 100ms ease;
 }
 
-button:hover,
 .button:hover {
   background-color: rgb(109, 204, 0);
   text-shadow: rgb(19, 163, 0) 0 1px 1px;
@@ -112,7 +112,7 @@ table {
   padding: 14px 16px;
 }
 
-.ingredient {
+.ingredients td:first-child {
   width: 120px;
   text-align: start;
   font-weight: 500;
@@ -136,20 +136,17 @@ main h2 {
   margin-bottom: 10px;
 }
 
-.recipe {
+main ol {
   line-height: 1.8;
-}
-
-.recipe ol {
   padding-left: 0;
   list-style: none;
 }
 
-.recipe li {
+main ol li {
   margin-bottom: 15px;
 }
 
-.recipe p {
+main ol p {
   margin: 0;
 }
 
@@ -161,31 +158,12 @@ main h2 {
   margin-bottom: 15px;
 }
 
-.profile {
-  margin-top: 30px;
-}
-
-.profile h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.profilename {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.profilename img {
+img[src="./img/profile.png"] {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-}
-
-.profilename p {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -199,7 +177,7 @@ main h2 {
     padding: 40px 70px;
   }
 
-  .filetopf img {
+  .apfelstrudel img {
     height: 150px;
   }
 
@@ -220,7 +198,7 @@ main h2 {
     gap: 10px;
   }
 
-  .filetopf img {
+  .apfelstrudel img {
     height: 110px;
   }
 
@@ -236,11 +214,11 @@ main h2 {
     font-size: 16px;
   }
 
-  .filetopf h1 {
+  .apfelstrudel h1 {
     font-size: 24px;
   }
 
-  .filetopf img {
+  .apfelstrudel img {
     height: 100px;
   }
 
@@ -255,15 +233,7 @@ main h2 {
     font-size: 14px;
   }
 
-  .ingredient {
+  .ingredients td:first-child {
     width: 80px;
-  }
-
-  .profilename {
-    flex-direction: column;
-    text-align: center;
-  }
-  input {
-    width: 40px;
   }
 }
