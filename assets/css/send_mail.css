@@ -1,0 +1,27 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+main {
+  width: 100%;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+button {
+  background-color: green;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 70px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 100ms ease;
+}
+
+button:hover {
+  background-color: rgb(109, 204, 0);
+  text-shadow: rgb(19, 163, 0) 0 1px 1px;
+}
