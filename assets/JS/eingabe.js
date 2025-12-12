@@ -27,7 +27,7 @@ function updatedIngredient() {
 
   }
 
-  if (servings >=1 && servings <=20){
+  if (servings >=4 && servings <=20){
  document.getElementById("potato").textContent = `${adjustedIngredients3.potato.toFixed(0)} kg`;
     document.getElementById("onion").textContent = `${adjustedIngredients3.onion.toFixed(0)} `;
     document.getElementById("butter").textContent = `${adjustedIngredients3.butter.toFixed(0)} EL`;
@@ -36,7 +36,7 @@ function updatedIngredient() {
     }
 
     else {
-        alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
+        alert('Die Portionsmenge sollte min 4 und max 20 betragen.')
     }
     
 
@@ -92,7 +92,7 @@ function updateIngredients() {
         parsley: (baseIngredients.parsley * servings) / 6
     };
 
-    if (servings >=1 && servings <=20){
+    if (servings >=6 && servings <=30){
 
     // Update der Zutaten in der Tabelle
     document.getElementById("meat").textContent = `${adjustedIngredients.meat.toFixed(0)} kg`;
@@ -110,7 +110,7 @@ function updateIngredients() {
     document.getElementById("parsley").textContent = `${adjustedIngredients.parsley.toFixed(0)} Bund`;
 }
 else {
-    alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
+    alert('Die Portionsmenge sollte min 6 und max 30 betragen.')
 }
 }
 
@@ -150,7 +150,7 @@ function updateIngredient2() {
         cheese: (baseIngredients.cheese * servings) / 4
     };
 
-    if (servings >=1 && servings <=20){
+    if (servings >=4 && servings <=20){
 
     // Zutaten in der Tabelle aktualisieren
     document.querySelector(".amount[data-ingredient='lasagnaPlates']").textContent = `${adjustedIngredient2.lasagnaPlates} Lasagneplatten`;
@@ -165,7 +165,7 @@ function updateIngredient2() {
     document.querySelector(".amount[data-ingredient='cheese']").textContent = `${adjustedIngredient2.cheese} g `;
 }
 else {
-    alert('Die Portionsmenge sollte min 1 und max 20 betragen.')
+    alert('Die Portionsmenge sollte min 4 und max 20 betragen.')
 }
 }
 
@@ -212,7 +212,7 @@ const servings = document.getElementById("servings").value;
         
     };
 
-    if (servings >=1 && servings <=48){
+    if (servings >=12 && servings <=48){
 
     // Zutaten in der Tabelle aktualisieren
         document.getElementById("wheat").textContent = `${adjustedIngredients2.wheat.toFixed(0)} g`;
@@ -237,6 +237,6 @@ const servings = document.getElementById("servings").value;
 
 }
 else {
-    alert('Die Portionsmenge sollte min 1 und max 48 betragen.')
+    alert('Die Portionsmenge sollte min 12 und max 48 betragen.')
 }
 }

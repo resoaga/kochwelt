@@ -22,15 +22,15 @@ main {
   align-items: center;
 }
 
-.contact-box h1 {
-  font-size: 40px;
+h1 {
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
 form {
   border-radius: 10px;
   background-color: #ebeceb;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
@@ -75,13 +75,12 @@ textarea {
   border-radius: 3px;
   color: white;
   padding: 12px 50px;
-  text-align: center;
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   cursor: pointer;
-  width: 100%;
   transition: background-color 100ms ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .button:hover {
