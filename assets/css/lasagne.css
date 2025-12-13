@@ -200,4 +200,7 @@ main h3 {
   .amount {
     width: 80px;
   }
+  input {
+    width: 40px;
+  }
 }
