@@ -42,7 +42,7 @@ main h1 {
 
 .informations-box {
   background-color: #ebeceb;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 10px 16px;
   display: inline-flex;
   align-items: center;
@@ -96,7 +96,6 @@ td {
   padding: 14px 16px;
   border-radius: 10px 10px 10px 10px;
 }
-
 
 main h2 {
   font-size: 24px;

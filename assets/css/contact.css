@@ -72,7 +72,7 @@ textarea {
 .button {
   background-color: green;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0px;
   color: white;
   padding: 12px 50px;
   font-family: "Raleway", sans-serif;
