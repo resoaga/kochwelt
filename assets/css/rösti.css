@@ -94,18 +94,9 @@ tr:nth-child(odd) {
 td {
   text-align: start;
   padding: 14px 16px;
+  border-radius: 10px 10px 10px 10px;
 }
 
-td:first-child {
-  border-radius: 10px 0 0 10px;
-  width: 120px;
-  text-align: start;
-  font-weight: 500;
-}
-
-td:last-child {
-  border-radius: 0 10px 10px 0;
-}
 
 main h2 {
   font-size: 24px;

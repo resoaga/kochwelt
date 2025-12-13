@@ -110,6 +110,7 @@ table {
 .ingredients td {
   text-align: start;
   padding: 14px 16px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .ingredients td:first-child {
@@ -120,14 +121,6 @@ table {
 
 .background {
   background-color: #ebeceb;
-}
-
-.background td:first-child {
-  border-radius: 10px 0 0 10px;
-}
-
-.background td:last-child {
-  border-radius: 0 10px 10px 0;
 }
 
 main h2 {

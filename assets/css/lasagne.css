@@ -100,14 +100,7 @@ tr:nth-child(odd) {
 td {
   text-align: start;
   padding: 14px 16px;
-}
-
-td:first-child {
-  border-radius: 10px 0 0 10px;
-}
-
-td:last-child {
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px 10px 10px 10px;
 }
 
 main h2 {
