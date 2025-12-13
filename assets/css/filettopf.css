@@ -256,4 +256,10 @@ main h2 {
     flex-direction: column;
     text-align: center;
   }
+  .portions input {
+    width: 40px;
+  }
+  .portions {
+    font-size: 16px;
+  }
 }

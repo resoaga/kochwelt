@@ -235,4 +235,10 @@ main ol p {
   .ingredients td:first-child {
     width: 80px;
   }
+  .portions input {
+    width: 40px;
+  }
+  .portions {
+    font-size: 16px;
+  }
 }

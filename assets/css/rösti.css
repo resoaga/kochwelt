@@ -179,4 +179,7 @@ main h2 {
   td:first-child {
     width: 80px;
   }
+  input {
+    width: 40px;
+  }
 }
